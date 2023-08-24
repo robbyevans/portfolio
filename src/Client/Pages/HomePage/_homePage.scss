@@ -1,0 +1,33 @@
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center; // Centers the inline content like text
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 1.25;
+    letter-spacing: -0.89px;
+  }
+  p,
+  span {
+    margin-bottom: 5px; // Adds space between every line
+    letter-spacing: -0.33px;
+    font-size: 1.3rem;
+  }
+
+  span {
+    display: block;
+    line-height: 1.5; // Adjust this value if you want more or less spacing between lines within the <span>
+  }
+  blockquote {
+    font-style: italic;
+    margin: 0;
+    padding-left: 1rem;
+    border-left: 3px solid var(--light-gray);
+  }
+}
