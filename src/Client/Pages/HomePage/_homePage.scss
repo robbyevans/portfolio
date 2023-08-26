@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100vh;
   font-size: 10px;
   font-weight: 700;
@@ -13,21 +13,19 @@
     line-height: 1.25;
     letter-spacing: -0.89px;
   }
-  p,
-  span {
-    margin-bottom: 5px; // Adds space between every line
+  .home-page-content {
+    display: inline-block;
+    text-align: left;
     letter-spacing: -0.33px;
     font-size: 1.3rem;
+    max-width: 45rem;
+    overflow: wrap;
+    p {
+      margin-top: 25px;
+      line-height: 35px;
+    }
   }
-
-  span {
-    display: block;
-    line-height: 1.5; // Adjust this value if you want more or less spacing between lines within the <span>
-  }
-  blockquote {
-    font-style: italic;
-    margin: 0;
-    padding-left: 1rem;
-    border-left: 3px solid var(--light-gray);
+  .reset {
+    font-size: 15px;
   }
 }
