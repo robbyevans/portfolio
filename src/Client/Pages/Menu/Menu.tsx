@@ -1,9 +1,43 @@
-import React from 'react'
+import React, { useState } from "react";
 
-function Menu() {
+
+const Menu: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div>Menu</div>
-  )
-}
+    <>
+    
+    <div>
+      <button className="menu-trigger" onClick={() => setIsOpen(true)}>
+        Open Menu
+      </button>
 
-export default Menu
+      {isOpen && (
+        <div className="menu-modal">
+          <div className="menu-content">
+            <button className="menu-close" onClick={() => setIsOpen(false)}>
+              X
+            </button>
+            <ul className="menu-list">
+              <li>
+                <a href="#socials">Socials</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#blogs">Blogs</a>
+              </li>
+              <li>
+                <a href="#navigation">Navigation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      )}
+    </div>
+    </>
+  );
+};
+
+export default Menu;
