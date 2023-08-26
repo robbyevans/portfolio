@@ -14,6 +14,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
     "react-rough-notation": "^1.0.5",
     "sass": "^1.66.1"
   },
@@ -26,6 +27,7 @@
     "@storybook/react": "^7.3.2",
     "@storybook/react-vite": "^7.3.2",
     "@storybook/testing-library": "^0.2.0",
+    "@svgr/webpack": "^8.1.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
@@ -37,6 +39,7 @@
     "eslint-plugin-storybook": "^0.6.13",
     "storybook": "^7.3.2",
     "typescript": "^5.0.2",
+    "url-loader": "^4.1.1",
     "vite": "^4.4.5"
   }
 }
